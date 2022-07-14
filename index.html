@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    button {
+      padding: 16px 22px;
+      background-color: #888;
+      border: none;
+      outline: none;
+      border-radius: 12px;
+      color: #fff;
+    }
+  </style>
+  
+  <title>Document</title>
+</head>
+<body>
+  <button>Click Me</button>
+
+  <script>
+    const button = document.querySelector("button");
+    button.addEventListener("click", (e) => {
+      const name = prompt("إسم الجميل إيه ؟");
+      if (!name || name.trim().length === 0 ) {
+        return alert("دخل إسمك ياض")
+      }
+      alert(`fuck you ${name}`)
+    })
+  </script>
+</body>
+</html>
